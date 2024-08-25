@@ -2,6 +2,9 @@
  * @typedef {"Babbage" | "Conway"} Era
  */
 
+/**
+ * @type {Era}
+ */
 export let ERA = "Babbage"
 
 /**
