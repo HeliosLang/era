@@ -2,15 +2,23 @@
  * @typedef {"Babbage" | "Conway"} Era
  */
 
+export let ERA = "Babbage"
+
+/**
+ * @param {Era} e
+ */
+export function setEra(e) {
+    ERA = e
+}
+
 /**
  * TODO: fetch from network
  * @param {"preview" | "preprod" | "mainnet"} networkName
- * @returns {Era}
  */
-export function getEra(networkName) {
+export async function syncEra(networkName) {
     if (networkName == "preview") {
-        return "Conway"
+        setEra("Conway")
     } else {
-        return "Babbage"
+        setEra("Babbage")
     }
 }
