@@ -1,11 +1,11 @@
 /**
- * @typedef {"Babbage" | "Conway"} Era
+ * @typedef {"Conway"} Era
  */
 
 /**
  * @type {Era}
  */
-export let ERA = "Babbage"
+export let ERA = "Conway"
 
 /**
  * @param {Era} e
@@ -19,9 +19,5 @@ export function setEra(e) {
  * @param {"preview" | "preprod" | "mainnet"} networkName
  */
 export async function syncEra(networkName) {
-    if (networkName == "preview") {
-        setEra("Conway")
-    } else {
-        setEra("Babbage")
-    }
+    setEra("Conway")
 }
