@@ -1,14 +1,14 @@
 /**
- * @typedef {"Conway"} Era
+ * @typedef {"Conway"} EraName
  */
 
 /**
- * @type {Era}
+ * @type {EraName}
  */
 export let ERA = "Conway"
 
 /**
- * @param {Era} e
+ * @param {EraName} e
  */
 export function setEra(e) {
     ERA = e
